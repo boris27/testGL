@@ -25,6 +25,8 @@ export class SkillsComponent implements OnInit {
   }
 
   ngOnInit() {
+    //this method not working because some angular issues when building project,
+    // <base href="/"> not working properly in new version of angular
     this.http.get('../../../assets/json/skills.json')
       .subscribe(
         data => {
@@ -33,5 +35,4 @@ export class SkillsComponent implements OnInit {
              },
         err => console.log(err) );
   }
-
 }

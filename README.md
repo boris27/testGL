@@ -1,6 +1,6 @@
 # TestGL
 
-GithubPages: 
+GithubPages:  https://boris27.github.io/testGL/
 
 # Install and Run
 

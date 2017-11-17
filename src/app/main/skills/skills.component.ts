@@ -26,7 +26,7 @@ export class SkillsComponent implements OnInit {
 
   ngOnInit() {
     // this method not working because some angular issues when building project,
-    // <base href="/"> not working properly in new version of angular, on previous version 4, my fix with document.location works
+    // <base href="/"> not working properly in new version of angular, on previous version 4 fix with document.location works
     // problem only on building stage for github pages, when launching webpack locally - no problem
 
     /*this.http.get('../../../assets/json/skills.json')
@@ -43,6 +43,6 @@ export class SkillsComponent implements OnInit {
       { name: 'ReactJS', level: 8},
       { name: 'AngularJS', level: 8}
     ];
-    this.skillsFill();
+    setTimeout(() => this.skillsFill(), 0 );
   }
 }

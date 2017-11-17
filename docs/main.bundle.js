@@ -641,8 +641,9 @@ var SkillsComponent = (function () {
     };
     SkillsComponent.prototype.ngOnInit = function () {
         // this method not working because some angular issues when building project,
-        // <base href="/"> not working properly in new version of angular, on previous version 4, my fix with document.location works
+        // <base href="/"> not working properly in new version of angular, on previous version 4 fix with document.location works
         // problem only on building stage for github pages, when launching webpack locally - no problem
+        var _this = this;
         /*this.http.get('../../../assets/json/skills.json')
           .subscribe(
             data => {
@@ -657,7 +658,7 @@ var SkillsComponent = (function () {
             { name: 'ReactJS', level: 8 },
             { name: 'AngularJS', level: 8 }
         ];
-        this.skillsFill();
+        setTimeout(function () { return _this.skillsFill(); }, 0);
     };
     SkillsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({

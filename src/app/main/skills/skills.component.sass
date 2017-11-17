@@ -8,10 +8,13 @@ table
 
   td:first-child
     text-align: right
-    padding-right: 50px
+    padding-right: 5vw
+
+    @media screen and (max-width: 700px)
+      font-size: 16px
 
   td:last-child
-    padding-left: 50px
+    padding-left: 5vw
 
   td
     width: 50%
@@ -23,3 +26,7 @@ table
       width: 20px
       height: 20px
       background-color: #9c9a9a
+
+      @media screen and (max-width: 700px)
+        width: 10px
+        height: 10px

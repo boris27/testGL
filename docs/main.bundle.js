@@ -596,7 +596,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "h3 {\n  text-align: center;\n  margin: 30px 0 20px 0; }\n\ntable {\n  width: 100%;\n  padding-bottom: 50px; }\n  table td:first-child {\n    text-align: right;\n    padding-right: 50px; }\n  table td:last-child {\n    padding-left: 50px; }\n  table td {\n    width: 50%; }\n    table td span {\n      display: inline-block;\n      border: 1px solid #9c9a9a;\n      border-radius: 50%;\n      width: 20px;\n      height: 20px;\n      background-color: #9c9a9a; }\n", ""]);
+exports.push([module.i, "h3 {\n  text-align: center;\n  margin: 30px 0 20px 0; }\n\ntable {\n  width: 100%;\n  padding-bottom: 50px; }\n  table td:first-child {\n    text-align: right;\n    padding-right: 5vw; }\n    @media screen and (max-width: 700px) {\n      table td:first-child {\n        font-size: 16px; } }\n  table td:last-child {\n    padding-left: 5vw; }\n  table td {\n    width: 50%; }\n    table td span {\n      display: inline-block;\n      border: 1px solid #9c9a9a;\n      border-radius: 50%;\n      width: 20px;\n      height: 20px;\n      background-color: #9c9a9a; }\n      @media screen and (max-width: 700px) {\n        table td span {\n          width: 10px;\n          height: 10px; } }\n", ""]);
 
 // exports
 
